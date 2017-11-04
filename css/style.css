@@ -1,0 +1,26 @@
+#Title{
+  margin: 50px;
+  font-size: 50px;
+  text-align: center;
+}
+
+ul.tracklist li{
+	border-bottom: 1px solid;
+	background-color: #e5cd8a;
+	background-position: 7px 2px;
+}
+
+ul.tracklist li#playing{
+	background-color: #10ea77;
+	background-position: 7px 2px;
+}
+
+ul.tracklist li#paused{
+	background-color: #e34500;
+	background-position: 7px 2px;
+	text-decoration: line-through
+}
+
+#submit{
+	text-align: center;
+}
