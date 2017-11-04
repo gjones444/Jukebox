@@ -3,7 +3,6 @@ var track = document.getElementsByTagName('li').length;
 
 playlist.addEventListener('click', function(e){
 	e.preventDefault();
-	/* console.log(e); */
 
 	var songName = e.target.getAttribute('data-src');
 	for (var i = 0; i < track; i++) {
@@ -40,8 +39,7 @@ playlist.addEventListener('click', function(e){
 		Jukebox.src = songName;
 		document.body.appendChild(Jukebox);
 		Jukebox.play();
-
-				}
+		}
 });
 
 document.getElementById("add").onclick = function() {
@@ -51,5 +49,5 @@ document.getElementById("add").onclick = function() {
 		text = text.split('\\');
 		text = text.pop();
 
-    document.getElementById("list").append(text);
+    songs.append(text);
 }
